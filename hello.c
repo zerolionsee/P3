@@ -28,9 +28,18 @@
 //   printf("%d\n", c);
 // }
 
+// #include <stdio.h>
+// int main()
+// {
+//   unsigned int a = -3;
+//   printf("%u\n", a);//无符号整数打印不出负数
+// }
+
 #include <stdio.h>
 int main()
 {
+  typedef unsigned int u_int;
   unsigned int a = -3;
+  // u_int a = -3;等价与上面
   printf("%u\n", a);//无符号整数打印不出负数
 }
